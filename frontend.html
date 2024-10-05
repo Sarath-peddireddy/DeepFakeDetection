@@ -1,0 +1,66 @@
+<html>
+<head>
+    <title>Deepfake Detection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: url('https://static0.makeuseofimages.com/wordpress/wp-content/uploads/2020/09/microsoft-deepfake-detector-featured.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+        .container {
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .title {
+            font-size: 48px;
+            font-weight: bold;
+        }
+        .title span {
+            font-weight: normal;
+        }
+        .upload-box {
+            margin-top: 20px;
+        }
+        .upload-box input[type="file"] {
+            display: block;
+            margin: 10px 0;
+        }
+        .upload-box input[type="range"] {
+            width: 100%;
+        }
+        .upload-box button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">Deepfake <span>Detection</span></div>
+        <div class="upload-box">
+            <input type="file" id="fileInput">
+            <label for="fileInput">Choose File</label>
+            <span>No file chosen</span>
+            <div>
+                <label for="sequenceLength">Sequence Length:20</label>
+                <input type="range" id="sequenceLength" min="1" max="100" value="20">
+            </div>
+            <button>UPLOAD</button>
+            
+        </div>
+    </div>
+</body>
+</html>
